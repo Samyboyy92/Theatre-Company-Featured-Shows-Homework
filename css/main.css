@@ -1,0 +1,194 @@
+Body, html{
+    height: 100%;
+}
+
+nav {
+    background-color:black;
+    overflow: hidden;
+}
+  
+nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 17px;
+    text-decoration: none;
+    font-size: 14px;
+    padding-right: 70px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.heroimage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+} 
+.herotext {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size:34px;
+}
+section{
+    margin:0;
+    padding:0;
+    display:grid;
+    grid-template-columns:1fr  1.5fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      '. top top '
+      ' . show1 btn1 '
+      ' . show2 btn2 '
+      ' . show3 btn3 '
+      ' . show4 btn4 '
+      ' . show5 btn5 ';
+    background-color:white;
+}
+#top{
+  grid-area: top;
+  background-color:lightgray;
+  text-align:center
+  
+}
+#show1{
+  grid-area: show1;
+  background-color: white;
+   text-align: center;
+  padding: 20px 0;
+  border-bottom:1px solid
+    
+}
+#show2{
+  grid-area: show2;
+  background-color: white;
+   text-align: center;
+  padding: 20px 0;
+    border-bottom:1px solid
+}
+#show3{
+  grid-area: show3;
+  background-color: white;
+   text-align: center;
+  padding: 20px 0;
+    border-bottom:1px solid
+}
+#show4{
+  grid-area: show4;
+  background-color: white;
+   text-align: center;
+  padding: 20px 0;
+}
+
+img{
+  float:left
+}
+p{
+  padding:0;
+  
+}
+.btn1{
+  grid-area: btn1;
+  float:right
+}
+.btn2{
+  grid-area: btn2;
+  float:right
+}
+.btn3{
+  grid-area: btn3;
+  float:right
+}
+.btn4{
+  grid-area: btn4;
+  float:right
+}
+.btn5{
+  grid-area: btn5;
+  float:right
+}
+footer{
+   margin:0;
+    padding:0;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "map info shows social"
+      "map icon1 shows1 Social1"
+      "map icon2 shows2 Social2"
+      "map icon3 shows3 Social3"
+      "map icon4 shows4 Social4";
+      background-color:black;
+      color:white;
+   }
+#map{
+  grid-area:map;
+  margin: 25px;
+  padding:10px;
+}
+#info{
+  grid-area: info;
+  text-align:center;
+}
+
+#text1{
+  grid-area:icon1;
+  padding:15px;
+  margin:0px;
+  text-align:center
+}
+
+#text2{
+  grid-area:icon2;
+  padding:15px;
+  margin:0px;
+  text-align:center
+}
+
+#text3{
+  grid-area:icon3;
+  padding:10px;
+  margin:0px;
+  text-align:center;
+}
+#shows{
+   grid-area: shows;
+  text-align:center;
+}
+#shows1{
+  grid-area:shows1;
+    text-align:center;
+}
+#shows2{
+  grid-area:shows2;
+    text-align:center;
+}
+#shows3{
+  grid-area:shows3;
+    text-align:center;
+}
+#shows4{
+  grid-area:shows4;
+    text-align:center;
+}
+#social{
+  text-align:center;
+}
+#social1{
+  text-align:center
+}
+#social2{
+  text-align:center
+}
+#social3{
+  text-align:center
+}
